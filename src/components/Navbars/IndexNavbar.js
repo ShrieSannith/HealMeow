@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link for navigation
 // reactstrap components
 import {
   Button,
@@ -66,10 +66,9 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand href="/" id="navbar-brand">
+            <NavbarBrand tag={Link} to="/" id="navbar-brand">
               HealMeow
             </NavbarBrand>
-            
             <UncontrolledTooltip target="#navbar-brand">
               Go to Home
             </UncontrolledTooltip>
@@ -101,11 +100,11 @@ function IndexNavbar() {
                   <p>Artificial Intelligence</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href='/cost'>
+                  <DropdownItem tag={Link} to="/cost">
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     Cost Comparison AI
                   </DropdownItem>
-                  <DropdownItem href="/travel">
+                  <DropdownItem tag={Link} to="/travel">
                     <i className="now-ui-icons location_pin"></i>
                     Travel Assistance AI
                   </DropdownItem>
@@ -123,11 +122,11 @@ function IndexNavbar() {
                   <p>Others</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/insurance">
+                  <DropdownItem tag={Link} to="/insurance">
                     <i className="now-ui-icons business_briefcase-24"></i>
                     Insurance
                   </DropdownItem>
-                  <DropdownItem href="/visa">
+                  <DropdownItem tag={Link} to="/visa">
                     <i className="now-ui-icons transportation_bus-front-12"></i>
                     VISA
                   </DropdownItem>
@@ -137,12 +136,16 @@ function IndexNavbar() {
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="/login-page"
                   id="upgrade-to-pro"
                   target="_blank"
                 >
                   <i className="now-ui-icons users_single-02"></i>
-                  <p style={{ marginLeft: '10px' }}>Login</p>
+                  <Link
+                    to="/login-page"
+                    style={{ marginLeft: "10px", color: "blue" }}
+                  >
+                    Login
+                  </Link>
                 </Button>
                 <UncontrolledTooltip target="#upgrade-to-pro">
                   Become a member!
