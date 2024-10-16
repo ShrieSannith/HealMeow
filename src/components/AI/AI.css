@@ -1,0 +1,44 @@
+/* styles.css or your CSS file */
+.fade-in {
+  opacity: 0; /* Start as invisible */
+  animation: fadeIn 0.5s forwards; /* Animate to fully visible */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End at fully visible */
+  }
+}
+
+.cost-comparison-guide {
+    background-color: #28282B;
+    /* Dark background color */
+    padding: 50px 20px;
+    /* Top and bottom padding, smaller side padding */
+}
+
+.guide-title {
+    color: white;
+    /* Title color */
+    margin-bottom: 20px;
+    /* Space below the title */
+    font-size: 1.5rem;
+    /* Reduced font size for title */
+}
+
+.guide-list {
+    list-style-type: disc;
+    /* Use disc for bullet points */
+    padding-left: 20px;
+    /* Left padding for the list */
+    color: white;
+    /* Text color */
+    font-size: 0.9rem;
+    /* Decrease font size for the list items */
+}
+
+.guide-list li {
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+/*  */
