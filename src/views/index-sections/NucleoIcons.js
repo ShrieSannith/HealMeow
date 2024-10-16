@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Row, Col } from "reactstrap";
 import './NucleoIcons.css'; // Custom styles
-
+import { Link } from "react-router-dom"; // Import Link for navigation
 function NucleoIcons() {
   const [visibleSection, setVisibleSection] = useState(null);
 
@@ -41,7 +41,10 @@ function NucleoIcons() {
           Our dedicated team is committed to providing accurate information to help you make significant healthcare decisions. We encourage you to use our Cost Comparison AI to find the best medical care options, ensuring high-quality treatment at competitive prices.
         </h5>
 
-            <Button color="primary" href="/cost">Get Cost Comparison</Button>
+          <Button color="primary">
+  <Link to="/cost" style={{ color: 'white', textDecoration: 'none' }}>Get Cost Comparison</Link>
+</Button>
+
           </div>
 
                     <div className="text-section" id="section2">
@@ -55,7 +58,9 @@ function NucleoIcons() {
           <br /><br/>
             Empower your adventures with our Travel Assistance AI and make informed decisions effortlessly. Travel smarter, explore more, and create unforgettable memories with the help of our advanced technology.
           </h5>
-          <Button color="primary" href="/travel-assistance">Get Travel Assistance</Button>
+                    <Button color="primary">
+  <Link to="/travel" style={{ color: 'white', textDecoration: 'none' }}>Get travel Assistance</Link>
+</Button>
         </div>
 
             {/* <div className="text-section" id="section3">
