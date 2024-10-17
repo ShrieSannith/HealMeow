@@ -12,6 +12,8 @@ import {
   CardTitle,
   CardText,
 } from "reactstrap";
+import './AI.css'
+
 
 // Carousel items
 const items = [
@@ -169,37 +171,39 @@ function PlacesToVisit() {
               padding: "15px",
             }}
           >
-            <h4 className="text-center">HOTELS TO STAY</h4>
-            {hotelsToStay.map((hotel) => (
-              <Card
-                key={hotel.id}
-                className="mb-4"
-                style={{
-                  borderRadius: "10px",
-                  overflow: "hidden",
-                }}
-              >
-                <div className="d-flex" style={{ padding: "15px" }}>
-                  <CardImg
-                    top
-                    src={hotel.imageUrl}
-                    alt={hotel.name}
-                    style={{
-                      width: "200px",
-                      height: "150px",
-                      objectFit: "cover",
-                      borderRadius: "10px",
-                    }}
-                  />
-                  <CardBody style={{ padding: "15px" }}>
-                    <CardTitle tag="h5" style={{ fontWeight: "bold", color: "black" }}>
-                      {hotel.name}
-                    </CardTitle>
-                    <CardText style={{  color: "black" }}>{hotel.description}</CardText>
-                  </CardBody>
-                </div>
-              </Card>
-            ))}
+          <h4 className="text-center">HOTELS TO STAY</h4>
+{hotelsToStay.map((hotel) => (
+  <Card
+    key={hotel.id}
+    className="mb-4"
+    style={{
+      borderRadius: "10px",
+      overflow: "hidden",
+    }}
+  >
+    <div className="d-flex flex-column flex-md-row" style={{ padding: "15px" }}>
+      <CardImg
+        top
+        src={hotel.imageUrl}
+        alt={hotel.name}
+        style={{
+          width: "200px",
+          height: "150px",
+          objectFit: "cover",
+          borderRadius: "10px",
+        }}
+      />
+      <CardBody style={{ padding: "15px" }}>
+        <CardTitle tag="h5" style={{ fontWeight: "bold", color: "black" }}>
+          {hotel.name}
+        </CardTitle>
+        <CardText style={{ color: "black" }}>{hotel.description}</CardText>
+      </CardBody>
+    </div>
+  </Card>
+
+))}
+            
           </div>
         </Col>
       </Row>
