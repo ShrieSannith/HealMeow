@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../../App.css'
+import '../../App.css';
 // reactstrap components
 import {
   Button,
@@ -15,6 +15,7 @@ import {
   Container,
   Col,
 } from "reactstrap";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar";
@@ -43,7 +44,6 @@ function SignupPage() {
   const [emailFocus, setEmailFocus] = useState(false);
   const [passwordFocus, setPasswordFocus] = useState(false);
   const [confirmPasswordFocus, setConfirmPasswordFocus] = useState(false);
-
   const [email, setEmail] = useState("");
   const [isEmailVerified, setIsEmailVerified] = useState(false);
 
@@ -198,12 +198,12 @@ function SignupPage() {
                     </Button>
                     <div className="pull-left">
                       <h6>
-                        <a
-                          href="/login-page"
+                        <Link
+                          to="/login-page" // Use Link instead of a href
                           style={{ color: 'white', fontSize: '10px' }}
                         >
                           Already have an account? Login
-                        </a>
+                        </Link>
                       </h6>
                     </div>
                   </CardFooter>

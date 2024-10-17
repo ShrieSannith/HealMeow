@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import '../../App.css'
 // reactstrap components
 import {
@@ -42,8 +43,6 @@ function LoginPage() {
   const [nameFocus, setNameFocus] = useState(false);
   const [emailFocus, setEmailFocus] = useState(false);
   const [passwordFocus, setPasswordFocus] = useState(false);
-  const [confirmPasswordFocus, setConfirmPasswordFocus] = useState(false);
-
   const [email, setEmail] = useState("");
   const [isEmailVerified, setIsEmailVerified] = useState(false);
 
@@ -76,10 +75,6 @@ function LoginPage() {
                     <h2>Sign In</h2>
                   </CardHeader>
                   <CardBody>
-                    {/* Name Input */}
-                    
-                    
-
                     {/* Email and Verify Button */}
                     <div style={styles.emailVerifyContainer}>
                       <InputGroup
@@ -104,8 +99,6 @@ function LoginPage() {
                           placeholderStyle={styles.placeholderStyle} // Placeholder color
                         />
                       </InputGroup>
-
-                      
                     </div>
 
                     {/* Password Input */}
@@ -128,44 +121,28 @@ function LoginPage() {
                         placeholderStyle={styles.placeholderStyle} // Placeholder color
                       />
                     </InputGroup>
-
-                    
-                  
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button
                       block
                       className="btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
                       Sign In
                     </Button>
                     <div className="pull-left">
-                      
                       <h6>
-                        <a
-                          href="/signup-page"
-                          style={{ color: 'white', fontSize: '10px' }}
-                        >
+                        <Link to="/signup-page" style={{ color: 'white', fontSize: '10px' }}>
                           Create an account?
-                        </a>
-                        
-                       
+                        </Link>
                       </h6>
                     </div>
                     <div className="pull-right">
                       <h6>
-                        
-                        
-                        <a
-                          href="/forgot-password"
-                          style={{ color: 'white', fontSize: '10px' }}
-                        >
+                        <Link to="/forgot-password" style={{ color: 'white', fontSize: '10px' }}>
                           Forgot password?
-                        </a>
+                        </Link>
                       </h6>
                     </div>
                   </CardFooter>
