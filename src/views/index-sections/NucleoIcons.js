@@ -100,4 +100,4 @@ function NucleoIcons() {
   );
 }
 
-export default NucleoIcons;
+export default Notifications;
