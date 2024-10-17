@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HealMeow/static/css/main.03d08eed.css",
-    "main.js": "/HealMeow/static/js/main.965e2880.js",
+    "main.css": "/HealMeow/static/css/main.e8f4b309.css",
+    "main.js": "/HealMeow/static/js/main.0c573d3d.js",
     "static/media/travel2.jpg": "/HealMeow/static/media/travel2.b433f02710c26d6b3a22.jpg",
     "static/media/travel3.jpg": "/HealMeow/static/media/travel3.56e127dfa1ff9b59f867.jpg",
     "static/media/bg6.jpg": "/HealMeow/static/media/bg6.dc603b7416966b84ac68.jpg",
@@ -26,7 +26,7 @@
     "index.html": "/HealMeow/index.html"
   },
   "entrypoints": [
-    "static/css/main.03d08eed.css",
-    "static/js/main.965e2880.js"
+    "static/css/main.e8f4b309.css",
+    "static/js/main.0c573d3d.js"
   ]
 }
