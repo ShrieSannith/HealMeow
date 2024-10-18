@@ -52,3 +52,14 @@
     margin-bottom: 10px; /* Add some space below the image */
   }
 }
+
+/* @media (max-width: 500px) {
+  .places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px !important;
+  }
+
+} */
