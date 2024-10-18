@@ -202,3 +202,9 @@ Facebook: <https://www.facebook.com/CreativeTim?ref=creativetim>
 Dribbble: <https://dribbble.com/creativetim?ref=creativetim>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
+
+All AI related code is in Components/AI
+All Pages are in src/views/examples
+All sections are in view/index-sections
+
+Text with fade in image effect - Nucleoicons.js

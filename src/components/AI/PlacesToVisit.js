@@ -203,7 +203,6 @@ function PlacesToVisit() {
   </Card>
 
 ))}
-            
           </div>
         </Col>
       </Row>

@@ -1,12 +1,15 @@
 /* styles.css or your CSS file */
 .fade-in {
-  opacity: 0; /* Start as invisible */
-  animation: fadeIn 0.5s forwards; /* Animate to fully visible */
+  opacity: 0;
+  /* Start as invisible */
+  animation: fadeIn 0.5s forwards;
+  /* Animate to fully visible */
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1; /* End at fully visible */
+    opacity: 1;
+    /* End at fully visible */
   }
 }
 
@@ -41,14 +44,30 @@
   margin-bottom: 10px;
   /* Space between list items */
 }
+
 /*  */
 
 @media (max-width: 768px) {
   .d-flex {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center align items horizontally */
+    flex-direction: column;
+    /* Stack image and text vertically */
+    align-items: center;
+    /* Center align items horizontally */
   }
+
   .d-flex img {
-    margin-bottom: 10px; /* Add some space below the image */
+    margin-bottom: 10px;
+    /* Add some space below the image */
   }
 }
+
+/* @media (max-width: 500px) {
+  .places {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px !important;
+  }
+
+} */
